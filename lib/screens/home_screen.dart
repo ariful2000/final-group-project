@@ -37,8 +37,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Welcome to Chat App!!!"),
+        title: Text("Welcome to Food Donation App!!!"),
         centerTitle: true,
+        backgroundColor: Color.fromARGB(255, 14, 21, 53),
       ),
       body: Center(
         child: Padding(

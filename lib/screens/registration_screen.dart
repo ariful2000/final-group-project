@@ -168,7 +168,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     final signUpButton = Material(
       elevation: 5,
       borderRadius: BorderRadius.circular(30),
-      color: Color.fromARGB(255, 31, 26, 26),
+      color: Color.fromARGB(255, 44, 32, 32),
       child: MaterialButton(
         padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,
@@ -187,9 +187,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     
     
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 102, 101, 109),
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        title: Text("Food Donation Registrarion"),
+        centerTitle: true,
+        backgroundColor: Color.fromARGB(0, 39, 34, 34),
         elevation: 0,
         leading: IconButton(
           icon: Icon(Icons.arrow_back,color: Colors.black),
@@ -211,14 +213,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
 
                   children: <Widget>[
-                    
-                    SizedBox(
-                        height: 180,
-                        child: Image.asset(
-                          "assets/logo.png",
-                          fit: BoxFit.contain,
-                        )
-                    ),
                     SizedBox(height: 50),
                     firstNameField,
                     SizedBox(height: 20),

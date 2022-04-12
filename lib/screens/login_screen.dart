@@ -101,11 +101,16 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
     return Scaffold(
-      backgroundColor: Colors.black,
+      appBar: AppBar(
+        title: Text("Food Donation App"),
+        backgroundColor: Color.fromARGB(255, 8, 9, 65),
+        centerTitle: true,
+      ),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center( 
         child: SingleChildScrollView(
           child: Container(
-            color: Color.fromARGB(255, 49, 104, 150),
+            color: Color.fromARGB(255, 255, 255, 255),
             child: Padding(
               padding: const EdgeInsets.all(36.0),
               child: Form(
@@ -116,13 +121,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
                   children: <Widget>[
                     
-                    SizedBox(
-                        height: 200,
-                        child: Image.asset(
-                          "assets/logo.png",
-                          fit: BoxFit.contain,
-                        )
-                    ),
                     SizedBox(height: 45),
                     emailField, 
                     SizedBox(height: 25),
