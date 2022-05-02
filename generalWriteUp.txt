@@ -17,7 +17,7 @@ and see charities that have requested donations.
 
 Everything implemented is essentially what was specified in the proposal review.
 
-Group Members: Daniel Richards,
+Group Members: Daniel Richards, Seonju Shin
 
 Arivo:
 Sign-up, Registration, Authentication, Profile
