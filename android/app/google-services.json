@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "23701008876",
-    "project_id": "chatapp-15742",
-    "storage_bucket": "chatapp-15742.appspot.com"
+    "project_number": "344702261395",
+    "project_id": "food-for-free-89d17",
+    "storage_bucket": "food-for-free-89d17.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:23701008876:android:3ec017c8a33584dda710c9",
+        "mobilesdk_app_id": "1:344702261395:android:99a2d04b7776e8111ad566",
         "android_client_info": {
-          "package_name": "com.example.chat_app"
+          "package_name": "com.example.fooddonationapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "23701008876-feik5b8nacvho86a2je9a3njt0ktfka5.apps.googleusercontent.com",
+          "client_id": "344702261395-moojaikfevohjls6t2dm838ct71vj7lj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fooddonationapp",
+            "certificate_hash": "7632c961a3a3377367789802b6d4510cd81b80f4"
+          }
+        },
+        {
+          "client_id": "344702261395-tjm63hr4ttc3clt83tvq2d47kdv9gcc5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBjFJpw9MuBJKcwSa2lkHap2PJJYPOjONI"
+          "current_key": "AIzaSyCzr1G2QPdAxyCa41qPUey-yNIRhTcmoCQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "23701008876-feik5b8nacvho86a2je9a3njt0ktfka5.apps.googleusercontent.com",
+              "client_id": "344702261395-tjm63hr4ttc3clt83tvq2d47kdv9gcc5.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

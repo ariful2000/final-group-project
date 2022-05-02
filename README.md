@@ -1,4 +1,4 @@
-# food_donation_app
+# fooddonationapp
 
 A new Flutter project.
 

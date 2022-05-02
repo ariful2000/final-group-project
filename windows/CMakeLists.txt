@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(chat_app LANGUAGES CXX)
+project(fooddonationapp LANGUAGES CXX)
 
-set(BINARY_NAME "chat_app")
+set(BINARY_NAME "fooddonationapp")
 
 cmake_policy(SET CMP0063 NEW)
 
