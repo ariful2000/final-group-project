@@ -1,1 +1,104 @@
+Food For Free Project
+
+App Description:
+
+We wanted to make an app that would be the basis for a larger app.
+The original larger app idea was a donation app for Restaurants that have extra food.
+We connect them with charities, facilitate communication, donation,
+and shipping process, as well as implement a map for ease of choice on the Restaurant side.
+
+We knew this would not be able to create this complex of an app upon just learning.
+So we simplified it on our proposal.
+
+Now, the app currently stands as a connection between Restaurants and charities
+via providing an app for restaurants or people with significant portions of food to donate
+to show how much they'd donate (and what tax they'd get deducted)
+and see charities that have requested donations.
+
+Everything implemented is essentially what was specified in the proposal review.
+
+Group Members: Daniel Richards,
+
+Arivo:
+Sign-up, Registration, Authentication, Profile
+
+Daniel:
+Homepage, Calculator, Charity List Connection, Profile
+
+Seonju:
+Companion App, Charity List Connection
+
+App Functions:
+
+*Going over what's in the lib folder, the only folder that matters.*
+
+    Controllers:
+    Controller here refers to functions for doing async app activities like refreshing, logging out, and getting initial screen (something you see in main.dart).
+    Controllers elsewhere will get their own little descriptions.
+
+    Enums:
+    Enum is a simple enumeration for the snackbar messages which we will rely on to confirm entries throughout the app.
+
+    Helpers:
+    Something I learnt from the copious amounts of tutorials I went through to do the chat app after failing the fanpage app.
+    I simply put useful functions in here, such as image finder, date & time operations, and writing to the storage.
+
+    Models:
+    Normally this would just be usermodel.dart (something we're all familiar with), but...our app needs to communicate with charity app via the firebase.
+    So, we need to map out the info a food request would have as well.
+
+    Res (Resources):
+    Here, you'll find variables (well, they're all constants) the app needs to look how it does.
+    App colors, app styles, and app images. Easier to see them here than in that weird gradle change for splash pages.
+    And, alert messages is a controller type dart for more general error messages that needn't be in any particular Screens controller.
+    As for the last two, collections and keys, they are not accessory. They're exactly what they sound like.
+    In collections, we specify the firebase collection split (we needed a split due to our two apps, one for those donating, one for those requesting).
+    And keys is just a simple dart we can import to use to ensure we're on current user.
+    Doesn't really matter where I put them whether it's in helpers, ext, or any other folder.
+    Just useful to have them together.
+
+    Screens:
+
+        All Screen folders adjusted by Daniel for consistency.
+        They will consist of components (organization reference), controllers (output deciders/error catching), and the dart screen files.
+
+        Authentication:
+        The folder consists of components (which are design decisions: button, background, and field), controllers (which are for controlling/limiting input also known as error catching), and the three dart screens.
+        Create Account Screen, Forgot Password Screen, Login Screen.
+        Short Description: In login, you can see we make a center textaligned title, then follow with child scroll for the fields to enter (Email, password, etc.).
+        This logic will follow in all the screens. Boxes and child scrolls in columns where they make sense.
+
+        Home:
+        Component, just like Auth, is organizational. Make the organization of field entries for widgets.
+        Controllers, home controller, is where we do what we need to to have a calculator. Determine price per pound, ensure field can be edited/written into, and calculate the sum of these pounds of food.
+        HomeScreen dart, where we actually make the page using boxes and, this time (cause it made sense to go side by side) rows!
+
+        Profile:
+        Component is essentially the exact same idea as home componenet.
+        Controller, we pop in async activities (like the main controller) we need. 
+        If we have a profile image, they should be able to update it when they want, so pickImage (referenced above) needs to be able to be called when necessary after app start.
+        And, we want to ensure if they change their name, that they actually enter a name, so use that snackbar function from enums!
+        And the profile screen dart is just putting it all into a nice looking set of widgets, as usual.
+
+        Requests:
+        Component, organizational. Also where we use neumorphics in the project as the screen needs to slide and update.
+        Food request dart, put it all into widgets AND have a streambuilder so we can get those updates from other app. Need that snapshot data!
+
+    
+    Services:
+    Here we have four files, one for each thing we need to get info/snapshot/maps from:
+    firebase auth, our own request data from other app via cloudfirestore, pictures from firebase stoage, and user details.
+
+    Widgets:
+    Make things fit with the style. Color the progress indicator, the snackbar messages, and edit design for "taking pictures" for your profile pic cause you can't actually do that without logging in to google.
+
+    Main.dart:
+    Initialize firebase, initialize storage, RUN THE APP, and pop to the initial screen! 
+
+
+
+
+
+
+
 
