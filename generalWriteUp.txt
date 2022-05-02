@@ -17,7 +17,7 @@ and see charities that have requested donations.
 
 Everything implemented is essentially what was specified in the proposal review.
 
-Group Members: Daniel Richards, Seonju Shin
+Group Members: Daniel Richards, Seonju Shin, Ariful Hoq
 
 Arivo:
 Sign-up, Registration, Authentication, Profile
@@ -96,6 +96,11 @@ App Functions:
 
     Main.dart:
     Initialize firebase, initialize storage, RUN THE APP, and pop to the initial screen! 
+
+
+    **The charity donation app has been organized the exact same way as the food donation app. The only thing different in the Home folder in Screens, where you will
+    find a home controller dart which includes the following: a list for the various categories, an async request function, and the according error catch (similar to the others).
+    You will also find the home screen dart which, like the others, is just putting it all together in widgets.
 
 
 
