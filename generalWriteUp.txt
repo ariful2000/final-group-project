@@ -28,6 +28,8 @@ Homepage, Calculator, Charity List Connection, Profile
 Seonju:
 Companion App, Charity List Connection
 
+Video Demo: https://drive.google.com/drive/folders/1oTXiaSdoEBvckKhO4S1m_QdvNfDFrjdO
+
 App Functions:
 
 *Going over what's in the lib folder, the only folder that matters.*
